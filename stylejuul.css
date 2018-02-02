@@ -1,0 +1,392 @@
+
+
+#site{
+
+    display: grid;
+    grid-template-columns: 60% 36% 4%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "headerLeft headerRight lijnrechts";
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2%;
+
+}
+
+
+/*Header link*/
+.headerLeft{
+    grid-area: headerLeft;
+    /*background-color: grey;*/
+
+}
+
+
+/*header rechts*/
+.headerRight{
+    grid-area: headerRight;
+}
+
+.lijnrechts{
+    grid-area: lijnrechts;
+}
+
+.lijnrechts>img{
+    width: 90%;
+    height: 35px;
+}
+
+.headerRight>img{
+    width: 10%;
+    height: 35px;
+    padding: 0 3px;
+}
+
+.headerLeft>img{
+    width: 6%;
+    height: 35px;
+    padding: 0 0.25em;
+}
+
+#text{
+    width: 91%;
+    height: 106px;
+    float: right;
+    background-image: url("images/tekst.png");
+    background-size: 100% 114%;
+}
+
+#numpad{
+    width: 88%;
+    height: 300px;
+    float: right;
+}
+
+.numpadGrid{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 3.8em 3.8em 3.8em 3.8em 3.8em;
+    grid-gap: 3px;
+    grid-template-areas:
+            "boven boven boven minus"
+            "home acht negen wieWijZijn"
+            "iMouse vijf vier wieWijZijn"
+            "ideologie ideologie linked enter"
+            "contact contact contact enter"
+}
+
+.hoeWerken{
+    grid-area: boven;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hoeWerken>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.hoeWerken:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.minus{
+    grid-area: minus;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+.minus>p{
+    font-size: 9px;
+    margin-top: 0;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.minus:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.home{
+    grid-area: home;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+.home>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.home:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.acht{
+    grid-area: acht;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.acht:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.negen{
+    grid-area: negen;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.negen:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.wieWijZijn{
+    grid-area: wieWijZijn;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+.wieWijZijn>p{
+    margin-top: 5%;
+    margin-bottom: 0%;
+    text-align: center;
+
+}
+
+.wieWijZijn:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.iMouse{
+    grid-area: iMouse;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+.iMouse>img{
+    width: 100%;
+    height: 63px;
+}
+
+.iMouse:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.vijf{
+    grid-area: vijf;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.vijf:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.vier{
+    grid-area: vier;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.vier:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.ideologieHeader{
+    grid-area: ideologie;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+.ideologieHeader>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.ideologieHeader:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.linked{
+    grid-area: linked;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.linked:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+.linked>img{
+    width: 84%;
+    height: 50px;
+    padding: 7px;
+}
+
+.enter{
+    grid-area: enter;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+
+.enter:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+
+.contact{
+    grid-area: contact;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contactHeader>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.contactHeader:hover{
+    cursor: pointer;
+    background-color: #fff500;
+}
+
+                                /*RESPONSIVE*/
+
+
+@media only screen and (max-width: 1270px) {
+
+    #site{
+        display: inline-block;
+    }
+
+    #text {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        height: 120px;
+        float: none;
+        background-image: url("images/tekstmobile.png");
+        position: absolute;
+    }
+    #numpad{
+        display: none;
+    }
+
+    .lijnrechts > img {
+        display: none;
+    }
+
+    .headerRight > img {
+        display: none;
+    }
+
+    .headerLeft > img {
+        display: none;
+    }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+    }
+
+    #site{
+        display: inline-block;
+    }
+
+}
+
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+    }
+
+    #site{
+        display: inline-block;
+    }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+    }
+
+    #site{
+        display: inline-block;
+    }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+
+    }
+
+    #site{
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1520px){
+    .headerLeft>img{
+        padding: 0 0.32em;
+    }
+
+    .headerRight>img{
+        padding: 0 5px;
+    }
+
+}

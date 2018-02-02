@@ -1,0 +1,583 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*Wie zijn wij*/
+.wieZijnWij{
+    background-color: #fff;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+.wieZijnWij:before, .wieZijnWij:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+}
+.wieZijnWij:before {
+    top: 0;
+    -webkit-transform: skewY(3deg);
+    transform: skewY(3deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+.wieZijnWij {
+    margin: 50px 0;
+    padding: 2% 20px;
+}
+.wieZijnWij h1{
+    color: #97AAf8;
+    font-size: 60px;
+}
+.wieZijnWijContent{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+.wieZijnWijContent img{
+    height: 35px;
+}
+.wieZijnWijImage{
+    width: 50%;
+    margin-top: 100px;
+    float: left;
+}
+.wieZijnWijImage img{
+    height: 200px;
+    margin-left: 200px;
+}
+
+/*Hoe werken wij*/
+.hoeWerkenWij{
+    background-color: #f1f1f1;
+    height: 400px;
+    margin-top: 50px;
+}
+.hoeWerkenWij h1{
+    color: #97AAf8;
+    font-size: 50px;
+}
+.hoeWerkenWijContent{
+    width: 45%;
+    float: right;
+    margin-right: 5%;
+}
+.hoeWerkenWijContent img{
+    height: 35px;
+}
+.hoeWerkenWijImage{
+    width: 50%;
+    margin-top: 100px;
+    float: left;
+}
+.hoeWerkenWijImage img{
+    height: 200px;
+    margin-left: 150px;
+}
+
+/*Ideologie*/
+.ideologie{
+    background-color: #fff;
+    height: 400px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+.ideologie h1{
+    color: #97AAf8;
+    font-size: 50px;
+}
+.ideologieContent{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+.ideologieContent img{
+    height: 35px;
+}
+.ideologieImage{
+    width: 50%;
+    margin-top: 100px;
+    float: left;
+}
+.ideologieImage img{
+    height: 200px;
+    margin-left: 150px;
+}
+.ideologie:before, .ideologie:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+}
+.ideologie:before {
+    top: 0;
+    -webkit-transform: skewY(3deg);
+    transform: skewY(3deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+.ideologie:after {
+    bottom: 0;
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+}
+.ideologie {
+    margin: 50px 0;
+    padding: 2% 20px;
+}
+
+/*Contact*/
+.contact{
+    background-color: #f1f1f1;
+    height: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+.contact h1{
+    color: #97AAf8;
+    font-size: 50px;
+}
+
+/*contactgegevens*/
+.contactGegevens{
+    height: 400px;
+}
+.gegevens{
+    width: 30%;
+    height: 400px;
+    float: left;
+    background-color: #fff;
+}
+.maps{
+    width: 70%;
+    float: left;
+}
+
+/*style header van juul*/
+
+
+#site{
+
+    display: grid;
+    grid-template-columns: 60% 36% 4%;
+    grid-template-rows: 500px;
+    grid-template-areas: "headerLeft headerRight lijnrechts";
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2%;
+
+}
+
+
+/*Header link*/
+.headerLeft{
+    grid-area: headerLeft;
+    /*background-color: grey;*/
+
+}
+
+
+/*header rechts*/
+.headerRight{
+    grid-area: headerRight;
+}
+
+.lijnrechts{
+    grid-area: lijnrechts;
+}
+
+.lijnrechts>img{
+    width: 90%;
+    height: 35px;
+}
+
+.headerRight>img{
+    width: 10%;
+    height: 35px;
+    padding: 0 3px;
+}
+
+.headerLeft>img{
+    width: 6%;
+    height: 35px;
+    padding: 0 0.25em;
+}
+
+#text{
+    width: 91%;
+    height: 106px;
+    float: right;
+    background-image: url("images/tekst.png");
+    background-size: 100% 114%;
+}
+
+#numpad{
+    width: 88%;
+    height: 300px;
+    float: right;
+}
+
+.numpadGrid{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 3.8em 3.8em 3.8em 3.8em 3.8em;
+    grid-gap: 3px;
+    grid-template-areas:
+            "boven boven boven minus"
+            "home acht negen wieWijZijn"
+            "iMouse vijf vier wieWijZijn"
+            "ideologie ideologie linked enter"
+            "contact contact contact enter"
+}
+
+.hoeWerken{
+    grid-area: boven;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hoeWerken>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.hoeWerken:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.minus{
+    grid-area: minus;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+.minus>p{
+    font-size: 9px;
+    margin-top: 0;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.minus:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.home{
+    grid-area: home;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+.home>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.home:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.acht{
+    grid-area: acht;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.acht:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.negen{
+    grid-area: negen;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.negen:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.wieWijZijn{
+    grid-area: wieWijZijn;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+.wieWijZijn>p{
+    margin-top: 5%;
+    margin-bottom: 0%;
+    text-align: center;
+
+}
+
+.wieWijZijn:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.iMouse{
+    grid-area: iMouse;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+.iMouse>img{
+    width: 100%;
+    height: 63px;
+}
+
+.iMouse:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.vijf{
+    grid-area: vijf;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.vijf:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.vier{
+    grid-area: vier;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.vier:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.ideologieHeader{
+    grid-area: ideologie;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+.ideologieHeader>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.ideologieHeader:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.linked{
+    grid-area: linked;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.linked:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+.linked>img{
+    width: 84%;
+    height: 50px;
+    padding: 7px;
+}
+
+.enter{
+    grid-area: enter;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+}
+
+.enter:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+
+.contactHeader{
+    grid-area: contact;
+    background-color: #434343;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contactHeader>p{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1%;
+}
+
+.contactHeader:hover{
+    cursor: pointer;
+    background-color: #fff500;
+    color: black;
+}
+
+/*RESPONSIVE*/
+
+
+@media only screen and (max-width: 1270px) {
+
+    #site{
+        display: inline-block;
+    }
+
+    #text {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        height: 120px;
+        float: none;
+        background-image: url("images/tekstmobile.png");
+        position: absolute;
+    }
+    #numpad{
+        display: none;
+    }
+
+    .lijnrechts > img {
+        display: none;
+    }
+
+    .headerRight > img {
+        display: none;
+    }
+
+    .headerLeft > img {
+        display: none;
+    }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+    }
+
+    #site{
+        display: inline-block;
+    }
+
+}
+
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+    }
+
+    #site{
+        display: inline-block;
+    }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+    }
+
+    #site{
+        display: inline-block;
+    }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    #numpad{
+        display: none;
+    }
+    #text{
+        background-image: url("images/tekstmobile.png");
+
+    }
+
+    #site{
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1520px){
+    .headerLeft>img{
+        padding: 0 0.32em;
+    }
+
+    .headerRight>img{
+        padding: 0 5px;
+    }
+
+}

@@ -1,0 +1,2 @@
+15:37:35|functions.php|SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting|sendMailToUser()
+15:43:17|functions.php|SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting|sendMailToUser
